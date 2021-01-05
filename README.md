@@ -1,15 +1,29 @@
 # LiDAR
+
+~this is a work in progress, please email mm2331@cam.ac.uk with any queries~
+
 Methodology for extracting built up volumes from areal LiDAR scans
 
-The following was used to extract data on built up volumes in the 649 wards of London from Digital Elevation Models. 
-Please refer to the DEM_creation file for instructions on how to efficiently calculate DEMs from surface scans and terain information.
+The following was used to extract zonal statistics on built up volumes in London from timestamped LiDAR data provided by the UK Environemnt Agency.
 
-The pull_stats file pulls zonal statistics from the LiDAR scans. I was particularly interested in Volumes, Building Footprint and Total Coverege of the scan. 
-I worked with DEMs at a 1m resolution, please note that you will have to tweak the volumes/footprint/coverage defintions if the resolution of your scans is different. 
+Step 1: 
+Digital Elevation Model Creation:
+  The GDAL library is used for this step.
+  Reffer to the DEMcreation.txt for a brief walkthrough of the process
+  Create_DEM.sh is a bash file that uses GDAL commands to create elevation models.
 
-The data_wrangle file cleans this data - 
-1) removes wards that were only partially scanned from the dataset
-2) plots a map showing the frequency with which each ward has been covered by the data
-3) calculates averege year on year built volumes growth rate for that ward
-4) plots this data 
+Step 2:
+Generate zonal statistics from timestamped files.
+  Get_Stats.py 
+
+Step 3: 
+Visualise the changes in Volume for a specific zone:
+  Visualise_Lidar.py takes in a user input for the name of a Zone that the user wants to inspect.
+  It proceeds to find all scans that cover this zone. 
+  It outputs 3 items:
+    1. A .xlsx file with the zonal statistics for each of the years
+    2. A graph mapping the built up volume against time with a line of best fit through these points
+    3. A gif visualising the changes in the elevation profile for the zone
+  
+ 
 
