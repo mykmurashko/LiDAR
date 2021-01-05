@@ -14,7 +14,8 @@ Digital Elevation Model Creation:
 
 ##Step 2:
 Generate zonal statistics from timestamped files.
-  Get_Stats.py 
+Get_Stats.py takes in a raster file and a georefferenced polygon as inputs. 
+It calculates the zonal statistics for the data inside the polygon. It outputs this as a dict.
 
 ##Step 3: 
 Visualise the changes in Volume for a specific zone:
