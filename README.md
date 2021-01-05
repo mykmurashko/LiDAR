@@ -9,7 +9,7 @@ The following was used to extract zonal statistics on built up volumes in London
 ##Step 1: 
 Digital Elevation Model Creation:
   The GDAL library is used for this step.
-  Reffer to the DEMcreation.txt for a brief walkthrough of the process
+  Reffer to the 'Manual for DEM creation' for a brief walkthrough of the process
   Create_DEM.sh is a bash file that uses GDAL commands to create elevation models.
 
 ##Step 2:
