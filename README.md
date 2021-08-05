@@ -10,7 +10,7 @@ To visualise dem in 3d we do two things:
 2. use grasshopper in rhino to create a delenauay mesh between those coordinates: visalise_in_3d.gh
 
 
-
+___________________________________________________
 
 We use Light Detection and Ranging (LiDAR) in order to quantify the physical form of London. LiDAR is a method for measuring the distance to a target by illuminating it with a laser and recording the time it takes for the reflection to return. First introduced in 1961 to track satellites, by 1971, it was used to map the surface of the moon as part of the Apollo 15 mission. Thanks to the rate of technological progress, we are able to use the same technology as the astronauts in order to measure the built form of London.
 
