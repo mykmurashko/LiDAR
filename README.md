@@ -1,6 +1,6 @@
 # LiDAR
 
-TL;DR: Method for calculating building volumes and new construction volumes from lidar. _Bash_ file cleans lidar data and exports DEM. _Python_ file calculates zonal stats.
+TL;DR: Method for calculating building volumes and new construction volumes from lidar. _Bash_ file cleans lidar data and exports DEM. _Python_ file calculate_zonal_stats.py calculates zonal stats.
 
 
 
