@@ -5,8 +5,9 @@ TL;DR: Method for calculating building volumes and new construction volumes from
 2. calculate_zonal_stats.py calculates zonal stats (volume, footprint, coverage) from DEM.
 
 To visualise dem in 3d we do two things:
-       1. translate raster into a csv with cartesian coordinates centred at 0,0,0 using lidar_raster_to_csv_coords.py
-       2. use grasshopper in rhino to create a delenauay mesh between those coordinates: visalise_in_3d.gh
+
+1. translate raster into a csv with cartesian coordinates centred at 0,0,0 using lidar_raster_to_csv_coords.py      
+2. use grasshopper in rhino to create a delenauay mesh between those coordinates: visalise_in_3d.gh
 
 
 
