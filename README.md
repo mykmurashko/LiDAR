@@ -1,6 +1,12 @@
 # LiDAR
 
-TL;DR: Method for calculating building volumes and new construction volumes from lidar. _Bash_ file cleans lidar data and exports DEM. _Python_ file calculate_zonal_stats.py calculates zonal stats.
+TL;DR: Method for calculating building volumes and new construction volumes from lidar:
+1. create_DEM.sh is a bash file which uses GDAL to clean lidar data and export the DEM. (read manual for dem creation)
+2. calculate_zonal_stats.py calculates zonal stats (volume, footprint, coverage) from DEM.
+
+To visualise dem in 3d we do two things:
+       1. translate raster into a csv with cartesian coordinates centred at 0,0,0 using lidar_raster_to_csv_coords.py
+       2. use grasshopper in rhino to create a delenauay mesh between those coordinates: visalise_in_3d.gh
 
 
 
